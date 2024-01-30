@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+    
+}
+.banner{
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("img3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width:auto;
+    margin: auto;
+    justify-content: space-between;
+    padding: 35px 0;
+    align-items:center ;
+    display: flex;
+    float: left;
+}
+.navbar ul{
+    margin-left: 779px;
+}
+.logo img{
+    width: 100px;
+    height: 50px;
+    margin-left: 20px; 
+    cursor: pointer; 
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    position: relative; 
+}
+.navbar ul li::after{
+    content:'';
+    height: 4px;
+    width: 0;  /*width 0 because after hover it become 100%*/
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 0px;  
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: white;
+}
+.content h1{
+    color: grey;
+
+    font-size: 50px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.button{
+    width: 200px;
+    background: transparent;
+    padding: 10px 0;
+    border-radius: 25px;
+    border: 2px solid rgb(6, 156, 156);
+    text-align: center;
+    color: beige;
+    cursor: pointer;
+    margin: 20px 10px;
+}
+
+.button:hover{
+    background-color: rgb(6, 156, 156);
+    border: none;
+    
+}
